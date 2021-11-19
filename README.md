@@ -20,7 +20,7 @@ limitations under the License.
 
 # Filename Extension
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > [Regular expression][regexp] to capture a [POSIX][posix] filename extension.
 
@@ -129,9 +129,9 @@ ext = RE_EXTNAME_POSIX.exec( '/foo/bar/.gitignore' )[ 1 ];
 
 ## See Also
 
--   [`@stdlib/regexp/extname`][@stdlib/regexp/extname]: return a regular expression to capture a filename extension.
--   [`@stdlib/regexp/extname-windows`][@stdlib/regexp/extname-windows]: return a regular expression to capture a Windows filename extension.
--   [`@stdlib/utils/extname`][@stdlib/utils/extname]: return a filename extension.
+-   <span class="package-name">[`@stdlib/regexp/extname`][@stdlib/regexp/extname]</span><span class="delimiter">: </span><span class="description">return a regular expression to capture a filename extension.</span>
+-   <span class="package-name">[`@stdlib/regexp/extname-windows`][@stdlib/regexp/extname-windows]</span><span class="delimiter">: </span><span class="description">return a regular expression to capture a Windows filename extension.</span>
+-   <span class="package-name">[`@stdlib/utils/extname`][@stdlib/utils/extname]</span><span class="delimiter">: </span><span class="description">return a filename extension.</span>
 
 </section>
 
@@ -182,8 +182,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/regexp-extname-posix/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/regexp-extname-posix?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/regexp-extname-posix.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/regexp-extname-posix/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
