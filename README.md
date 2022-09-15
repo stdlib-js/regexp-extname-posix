@@ -18,44 +18,36 @@ limitations under the License.
 
 -->
 
-# Filename Extension
+# reExtnamePosix
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > [Regular expression][regexp] to capture a [POSIX][posix] filename extension.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/regexp-extname-posix
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-reExtnamePosix = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-extname-posix@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var reExtnamePosix = require( 'path/to/vendor/umd/regexp-extname-posix/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/regexp-extname-posix@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.reExtnamePosix;
-})();
-</script>
+var reExtnamePosix = require( '@stdlib/regexp-extname-posix' );
 ```
 
 #### reExtnamePosix()
@@ -105,13 +97,8 @@ var ext = reExtnamePosix.REGEXP.exec( 'index.js' )[ 1 ];
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/regexp-extname-posix@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var reExtnamePosix = require( '@stdlib/regexp-extname-posix' );
 
 var RE_EXTNAME_POSIX = reExtnamePosix();
 var ext;
@@ -136,11 +123,6 @@ ext = RE_EXTNAME_POSIX.exec( '/foo/bar/file' )[ 1 ];
 
 ext = RE_EXTNAME_POSIX.exec( '/foo/bar/.gitignore' )[ 1 ];
 // returns ''
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -238,11 +220,11 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/regexp/extname]: https://github.com/stdlib-js/regexp-extname/tree/umd
+[@stdlib/regexp/extname]: https://github.com/stdlib-js/regexp-extname
 
-[@stdlib/regexp/extname-windows]: https://github.com/stdlib-js/regexp-extname-windows/tree/umd
+[@stdlib/regexp/extname-windows]: https://github.com/stdlib-js/regexp-extname-windows
 
-[@stdlib/utils/extname]: https://github.com/stdlib-js/utils-extname/tree/umd
+[@stdlib/utils/extname]: https://github.com/stdlib-js/utils-extname
 
 <!-- </related-links> -->
 
