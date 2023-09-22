@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import reExtnamePosix from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-extname-posix@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/regexp-extname-posix/tags). For example,
+
+```javascript
 import reExtnamePosix from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-extname-posix@v0.1.0-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { REGEXP } from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-extname-posix@v0.1.0-deno/mod.js';
+import { REGEXP } from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-extname-posix@deno/mod.js';
 ```
 
 #### reExtnamePosix()
@@ -99,7 +104,7 @@ var ext = reExtnamePosix.REGEXP.exec( 'index.js' )[ 1 ];
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import reExtnamePosix from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-extname-posix@v0.1.0-deno/mod.js';
+import reExtnamePosix from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-extname-posix@deno/mod.js';
 
 var RE_EXTNAME_POSIX = reExtnamePosix();
 var ext;
