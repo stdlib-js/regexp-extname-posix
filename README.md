@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import reExtnamePosix from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-extname-posix@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/regexp-extname-posix/tags). For example,
+
+```javascript
 import reExtnamePosix from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-extname-posix@v0.1.1-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { REGEXP } from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-extname-posix@v0.1.1-esm/index.mjs';
+import { REGEXP } from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-extname-posix@esm/index.mjs';
 ```
 
 #### reExtnamePosix()
@@ -104,7 +109,7 @@ var ext = reExtnamePosix.REGEXP.exec( 'index.js' )[ 1 ];
 <body>
 <script type="module">
 
-import reExtnamePosix from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-extname-posix@v0.1.1-esm/index.mjs';
+import reExtnamePosix from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-extname-posix@esm/index.mjs';
 
 var RE_EXTNAME_POSIX = reExtnamePosix();
 var ext;
